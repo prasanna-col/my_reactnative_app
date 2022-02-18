@@ -1,0 +1,6 @@
+module Pods_my_rn_app {
+  umbrella header "Pods-my_rn_app-umbrella.h"
+
+  export *
+  module * { export * }
+}
