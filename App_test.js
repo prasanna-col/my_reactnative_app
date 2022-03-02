@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from 'react';
 
 import {View, Text} from 'react-native'
-const ForTest = () => {
+const App = () => {
     return (
         <View>
             <Text>
@@ -11,4 +11,4 @@ Hello world
     );
 }
 
-export default ForTest;
+export default App;

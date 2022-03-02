@@ -334,9 +334,17 @@ PODS:
     - React-perflogger (= 0.67.1)
   - ReactNativeART (1.2.0):
     - React
+  - RNDeviceInfo (8.4.9):
+    - React-Core
+  - RNQrGenerator (1.2.0):
+    - React
+    - ZXingObjC
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
+  - ZXingObjC (3.6.5):
+    - ZXingObjC/All (= 3.6.5)
+  - ZXingObjC/All (3.6.5)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
@@ -393,6 +401,8 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "ReactNativeART (from `../node_modules/@react-native-community/art`)"
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
+  - RNQrGenerator (from `../node_modules/rn-qr-generator`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -411,6 +421,7 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - YogaKit
+    - ZXingObjC
 
 EXTERNAL SOURCES:
   boost:
@@ -473,6 +484,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   ReactNativeART:
     :path: "../node_modules/@react-native-community/art"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
+  RNQrGenerator:
+    :path: "../node_modules/rn-qr-generator"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -520,9 +535,12 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 2c92a8bddd1a3e72c7513d1e74235c2d9c84875c
   ReactCommon: 2e816fad39f65f2a94a5999d5be463a6b620dcf6
   ReactNativeART: 78edc68dd4a1e675338cd0cd113319cf3a65f2ab
+  RNDeviceInfo: 4944cf8787b9c5bffaf301fda68cc1a2ec003341
+  RNQrGenerator: 34beaf1996de4a2f2122c7019dccd1717b22d8d7
   Yoga: 5cbf25add73edb290e1067017690f7ebf56c5468
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
+  ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 5d3e4a3cf47e9ece288c2c2f923a6fc43175d3c9
+PODFILE CHECKSUM: e8c25e28a5750773ba01c92fec35ea1c486d5747
 
 COCOAPODS: 1.11.2

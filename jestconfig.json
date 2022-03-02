@@ -1,0 +1,42 @@
+{
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "/tst/.*\\.(test|spec)\\.(ts|tsx|js)$",
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js",
+      "./tst/testCommons.tsx",
+      "./node_modules/@amzn/apay-merchant-app-ui-assets/jestSetup.js",
+      "./src/i18n.ts"
+    ],
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+    "moduleNameMapper": {
+      "^~/(.*)$": "<rootDir>/src/$1",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/assetsTransformer.js"
+    },
+    "modulePaths": ["<rootDir>/src"],
+    "roots": ["<rootDir>/src/", "<rootDir>/tst/", "<rootDir>/node_modules/"],
+    "collectCoverage": true,
+    "coverageReporters": ["json", "json-summary", "lcov", "text"],
+    "collectCoverageFrom": [
+      "src/**/*",
+      "!src/app.tsx",
+      "!**/resources/**",
+      "!**/index.{ts,js,tsx}",
+      "!**/types.ts",
+      "!src/**/*.d.ts"
+    ],
+    "coverageDirectory": ".tmp/coverage",
+    "globals": {
+      "ts-jest": {
+        "babelConfig": true,
+        "diagnostics": true
+      }
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-navigation|react-navigation-redux-helpers|@react-navigation|@react-native-community|@amzn/apay-merchant-app-ui-assets|@amzn/apay-merchant-app-utils/.*)"
+    ]
+  }
+  

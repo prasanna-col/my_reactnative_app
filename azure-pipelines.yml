@@ -8,8 +8,9 @@ trigger:
       - develop
 
 # azure-pipelines.yml
-pool:
-  vmImage: "macOS 10.14"
+
+# pool:
+#   vmImage: "macOS 10.14"
 steps:
   - task: NodeTool@0
     inputs:

@@ -7,7 +7,6 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import type { Node } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -21,8 +20,6 @@ import {
   View,
 } from 'react-native';
 import InsetShadow from 'react-native-inset-shadow'
-// import FlashMessage from "react-native-flash-message";
-import { showMessage, hideMessage } from "react-native-flash-message";
 
 import {
   Colors,
@@ -30,6 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import { CirclesLoader, PulseLoader, TextLoader, DotsLoader } from 'react-native-indicator';
 import RNQRGenerator from 'rn-qr-generator';
+import {getVersion} from 'react-native-device-info';
 
 
 const App: () => Node = () => {
@@ -133,7 +131,7 @@ const App: () => Node = () => {
                 color="#841584"
               />
             </View>
-
+<Text>version: {getVersion()}</Text>
             <View>
               <Image source={{uri:ImageURI}} style={{height:100, width:100}} />
             </View>
