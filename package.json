@@ -22,6 +22,7 @@
     "@react-navigation/stack": "^6.1.1",
     "react": "17.0.2",
     "react-native": "0.67.1",
+    "react-native-device-info": "^8.5.0",
     "react-native-flash-message": "^0.2.1",
     "react-native-gesture-handler": "^2.3.0",
     "react-native-indicator": "^1.2.2",
